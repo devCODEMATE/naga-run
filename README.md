@@ -2,11 +2,17 @@
 
 A pixel-art endless runner built with **vanilla JavaScript and HTML5 Canvas** — no frameworks, no libraries, no build tools.
 
-**[▶ Play it here](https://devcodemate.github.io/naga-run/)**
+**[▶ Play it here](https://devcodemate.github.io/the-great-catscape/)**
 
 ![Made with vanilla JS](https://img.shields.io/badge/JavaScript-Vanilla-yellow)
 ![No frameworks](https://img.shields.io/badge/Frameworks-None-blue)
 ![HTML5 Canvas](https://img.shields.io/badge/Rendering-HTML5%20Canvas-red)
+
+## Screenshots
+
+| Start | Gameplay | Game Over |
+|---|---|---|
+| ![Start screen](screenshots/start-game.png) | ![Gameplay](screenshots/gameplay.png) | ![Game over screen](screenshots/game-over.png) |
 
 ---
 
@@ -64,8 +70,8 @@ This project exists to show a different set of skills than the rest of my portfo
 ### Run it locally
 
 ```bash
-git clone https://github.com/devCODEMATE/naga-run.git
-cd naga-run
+git clone https://github.com/devCODEMATE/the-great-catscape.git
+cd the-great-catscape
 ```
 
 Open `index.html` with the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VS Code extension, or any local static server.
@@ -126,8 +132,8 @@ Este proyecto existe para mostrar un conjunto de habilidades distinto al resto d
 ### Cómo correrlo localmente
 
 ```bash
-git clone https://github.com/devCODEMATE/naga-run.git
-cd naga-run
+git clone https://github.com/devCODEMATE/the-great-catscape.git
+cd the-great-catscape
 ```
 
 Abrí `index.html` con la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) de VS Code, o cualquier servidor estático local.
