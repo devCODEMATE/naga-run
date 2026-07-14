@@ -3,6 +3,18 @@
 // and collision detection against the player. Difficulty scales over time
 // through the LEVELS table defined in constants.js.
 
+// Preload any pixel-art sprites declared on OBSTACLE_TYPES (via spriteSrc).
+// Types without a spriteSrc keep using their placeholder shape until their
+// art is ready — this lets us swap them in one at a time.
+const obstacleSprites = {};
+OBSTACLE_TYPES.forEach((type) => {
+  if (type.spriteSrc) {
+    const img = new Image();
+    img.src = type.spriteSrc;
+    obstacleSprites[type.id] = img;
+  }
+});
+
 let obstacles = [];
 let survivalTime = 0;      // ms survived in the current run — drives the level lookup
 let nextSpawnInMs = 0;     // countdown (in ms) until the next obstacle spawns
@@ -76,6 +88,12 @@ function drawObstacles(ctx) {
 // color or what's behind it. These get swapped for pixel-art sprites later
 // without touching any other logic.
 function drawObstacleShape(ctx, obstacle) {
+  const sprite = obstacleSprites[obstacle.type];
+  if (sprite && sprite.complete && sprite.naturalWidth > 0) {
+    ctx.drawImage(sprite, obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+    return;
+  }
+
   ctx.fillStyle = obstacle.color;
   ctx.strokeStyle = COLORS.navy;
   ctx.lineWidth = 3;

@@ -52,9 +52,9 @@ const RUN_ANIMATION_SPEED = 190;
 // Each type has its own silhouette (see obstacles.js drawObstacleShape) and size.
 const OBSTACLE_TYPES = [
   { id: 'cucumber', width: 40, height: 22, color: COLORS.teal, spriteSrc: 'assets/obstacle-cucumber.png?v=1' },
-  { id: 'bucket', width: 37, height: 43, color: COLORS.white, spriteSrc: 'assets/obstacle-bucket.png?v=1' },
-  { id: 'vacuum', width: 52, height: 51, color: COLORS.black, spriteSrc: 'assets/obstacle-vacuum.png?v=1' },
-  { id: 'cone', width: 41, height: 44, color: COLORS.yellow, spriteSrc: 'assets/obstacle-cone.png?v=1' },
+  { id: 'bucket', width: 37, height: 43, color: COLORS.white, spriteSrc: 'assets/obstacle-bucket.png?v=3' },
+  { id: 'vacuum', width: 52, height: 51, color: COLORS.black, spriteSrc: 'assets/obstacle-vacuum.png?v=3' },
+  { id: 'cone', width: 41, height: 44, color: COLORS.yellow, spriteSrc: 'assets/obstacle-cone.png?v=3' },
 ];
 
 // Shrinks the player's collision box slightly so near-misses feel fair
@@ -73,7 +73,7 @@ const RUNE_SPAWN_MIN_MS = 9000;
 const RUNE_SPAWN_MAX_MS = 16000;
 const RUNE_SCORE_BONUS = 50;
 const INVINCIBILITY_DURATION_MS = 5000;
-const RUNE_SPRITE_SRC = 'assets/rune-chick.png?v=1';
+const RUNE_SPRITE_SRC = 'assets/rune-chick.png?v=3';
 
 // Local leaderboard (persisted in localStorage, no backend needed)
 const LEADERBOARD_STORAGE_KEY = 'naga-run-leaderboard';
